@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/js/bootstrap.js">
+</head>
+<body>
+<!--<input type="button" class="btn-primary" value="按钮">-->
+<script>
+    $(function () {
+        var idx=0;
+        var array=["富强","民主","文明","和谐","自由","平等","公正","法治","爱国","敬业","诚信","友善"];
+        var color=["BlueViolet","Black","Aquamarine","Chartreuse","Darkorange"];
+        $(document).on("click",function (e) {
+            // var num=parseInt(Math.random()*array.length);
+            var num2=parseInt(Math.random()*color.length);
+            idx=(idx+1)%array.length;
+            var $div=$("<div></div>").text(array[idx]);
+            $div.css({"position":"absolute",
+                "top":e.clientY,
+                "zIndex":222,
+                "left":e.clientX,
+                "color":color[num2]
+            }
+            ).animate({"top":e.clientY-100,"opacity":0},1500,function () {
+                $div.remove();
+            }).appendTo("body");
+        })
+    })
+
+    var idx=0;
+    var array=["富强","民主","文明","和谐","自由","平等","公正","法治","爱国","敬业","诚信","友善"];
+    var color=["BlueViolet","Black","Aquamarine","Chartreuse","Darkorange"];
+    document.onclick=function () {
+        var num2=parseInt(Math.random()*color.length);
+        idx=(idx+1)%array.length;
+        document.createElement("div");
+    }
+</script>
+</body>
+</html>
