@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.slideshow {
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.slideshow ul {
+    list-style: none;
+}
+
+.slideshow ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 采用背景色时a标签样式 */
+.slideshow ul li a {
+    display: block;
+    width:600px;
+    height:300px;
+    line-height: 300px;
+    text-align: center;
+    cursor: default;
+    text-decoration: none;
+    font-size:50px;
+    color:red;
+}
+.slideshow ul li a:nth-child(even) {
+    background-color:pink;;
+}
+.slideshow ul li a:nth-child(odd) {
+    background-color:yellow;;
+}
+
+.slideshow ul li a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 按钮 */
+
+.slideshow:hover span {
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #ccc;
+    background-color: rgba(7, 17, 27, .1);
+    font-size: 30px;
+    border: 1px solid #ccc;
+    cursor: default;
+    position: absolute;
+    top: 120px;
+    z-index: 1;
+    /* 火狐 */
+    -moz-user-select: none;
+    /* webkit 浏览器 */
+    -webkit-user-select: none;
+    /* IE 浏览器 */
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.slideshow .right {
+    right: 0;
+}
+
+.slideshow .left {
+    left: 0
+}
