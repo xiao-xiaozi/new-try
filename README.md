@@ -2,18 +2,10 @@
 Hi Humans!
 branch xiaozi
 
-feature-C  
-try to save as last commit.  
-dianji.html 是点击时有文字动画。  
+## jquery-slideshow
+利用jQuery实现的轮播图。
 
-@keyframes sofa03 {
-    from{}
-    to{
-        transform: translate(190px,666px) rotate(45deg);
-    }
-}
+## postMessage
+是window.postMessage()方法的使用案例(iframe和window.open)。
 
- <div class="cart">
-      <img src="images/03-cart01.gif" alt="">
-      <img src="images/03-cart02.gif" alt="">
-</div>
+
